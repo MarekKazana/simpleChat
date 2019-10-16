@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MKChat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body onload="connect()">
+
+<div class="container">
+    <div class="row">
+        <div class="col-2 mx-2">
+            <label>User:</label>
+            <input id="user" type="text"/> <br>
+        </div>
+        <div class="col-2 mx-2">
+            <label class="text-nowrap">Your message:</label>
+            <input id="messageToSend" type="text"/> <br>
+
+            <button onclick="sendMessage()">Send</button>
+            <p id="response"></p>
+        </div>
+    </div>
+    <script src="stomp.js"></script>
+    <script src="js.js"></script>
+</div>
+</body>
+</html>
